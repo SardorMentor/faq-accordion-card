@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+  color: $darkGrayishBlue;
+  background-image: linear-gradient(to bottom, $softViolet, $softBlue);
+  background-attachment: fixed;
+  min-height: 100vh;
+
+  @include breakpoint-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.wrapper {
+  padding: 148px 24px 85px;
+
+  @include breakpoint-up {
+    padding: 0;
+  }
+}

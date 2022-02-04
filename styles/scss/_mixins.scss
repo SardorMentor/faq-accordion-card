@@ -1,0 +1,11 @@
+@mixin breakpoint-up {
+  @media (min-width: 376px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down {
+  @media (max-width: 375.99px) {
+    @content;
+  }
+}
